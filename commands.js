@@ -41,12 +41,17 @@ const CHALLENGE_COMMAND = {
 };
 
 // Response command
-const SQUILEXA_RESPONSE = {
-  name: 'squilexa',
+const SQUILEXA_HELP = {
+  name: 'help',
   description: 'get help from Squilexa',
   type: 1
 };
+const SQUILEXA_RESPONSE = {
+  name: 'squilexa',
+  description: 'call squilexa',
+  type: 1
+};
 
-const ALL_COMMANDS = [TEST_COMMAND, CHALLENGE_COMMAND, SQUILEXA_RESPONSE];
+const ALL_COMMANDS = [TEST_COMMAND, CHALLENGE_COMMAND, SQUILEXA_HELP, SQUILEXA_RESPONSE];
 
 InstallGlobalCommands(process.env.APP_ID, ALL_COMMANDS);
